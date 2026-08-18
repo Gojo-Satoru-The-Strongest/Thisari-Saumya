@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pitigala Geo-Portal & Village Identity</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #f4f9f4; color: #333; }
+        header { background-color: #2c5e1a; color: white; padding: 20px; text-align: center; }
+        nav { background-color: #3e8e23; padding: 10px; text-align: center; }
+        nav a { color: white; margin: 0 10px; text-decoration: none; font-weight: bold; }
+        .container { max-width: 1000px; margin: 20px auto; padding: 20px; background: white; box-shadow: 0 0 10px rgba(0,0,0,0.1); border-radius: 8px; }
+        section { margin-bottom: 40px; }
+        h2 { color: #2c5e1a; border-bottom: 2px solid #3e8e23; padding-bottom: 5px; }
+        .flex-row { display: flex; flex-wrap: wrap; gap: 20px; }
+        .flex-col { flex: 1; min-width: 300px; }
+        .card { background: #eef7ee; padding: 15px; border-radius: 5px; margin-bottom: 15px; border-left: 4px solid #2c5e1a; }
+        .map-container { width: 100%; height: 400px; background-color: #ddd; border-radius: 8px; margin-top: 15px; overflow: hidden; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #3e8e23; color: white; }
+        .comment-box { width: 100%; padding: 10px; margin-top: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; }
+        button { background-color: #2c5e1a; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; margin-top: 10px; }
+        button:hover { background-color: #1f4212; }
+        .tourist-img { width: 100%; height: 200px; object-fit: cover; border-radius: 5px; margin-bottom: 10px; background-color: #ccc; }
+        .comment-list { margin-top: 20px; border-top: 1px solid #ddd; padding-top: 15px; }
+        .comment-item { background: #f9f9f9; padding: 10px; border-radius: 5px; margin-bottom: 10px; border-left: 3px solid #3e8e23; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Pitigala</h1>
+    <p>A beautiful harmony between traditional rural life, community culture, and nature.</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#History">History</a>
+    <a href="#geoportal">Geo-Portal</a>
+    <a href="#demographics">Demographics</a>
+    <a href="#agriculture">Agriculture</a>
+    <a href="#culture">Culture</a>
+    <a href="#tourism">Tourism</a>
+    <a href="#community">Community Forum</a>
+</nav>
+
+<div class="container">
+    <img src="pic/1.jpeg" width="1000"  height="650" alt="image of the town">
+    <section id="about">
+        <h2>About Pitigala</h2>
+        <p>Pitigala is a peaceful village located in the Galle District of the Southern Province in Sri Lanka. It belongs to the Niyagama Divisional Secretariat and is home to a warm, close-knit community. The village is blessed with rich natural beauty, featuring green tea gardens, rubber estates, and rolling hills.</p>
+        <div class="flex-row">
+            <div class="flex-col card">
+                <h3>Accessibility</h3>
+                <p>Nestled within the region, Pitigala is well-connected and easily accessible from its neighboring major towns. Visitors and residents can enter the village through three primary routes, making it a convenient local hub. Whether you are traveling from Mapalagama, Elpitiya, or Palawaththa, reaching Pitigala is a straightforward journey. The distances from these nearest towns are as follows:</p>
+                <ul>
+                    <li>From Pelawaththa: 10.3 Km</li>
+                    <li>From Elpitiya: 13.5 Km</li>
+                    <li>From Mapalagama: 17.8 Km</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="History">
+        <h2>History of Pitigala</h2>
+        <p>The name 'Pitigala' comes from two Sinhala words: 'pitiya,' which means land, and 'gala,' which means rock. It is called the 'land of rocks' because there are many large rocks and mountains in the area. Over time, the words 'pitiya' and 'gala' were combined to form the name Pitigala.</p>
+    </section>
+
+    <section id="geoportal">
+        <h2>Village Geo-Portal</h2>
+        <p>Explore the spatial data and land use of Pitigala. Land use categories include: Residential, Administrative, Commercial, Agriculture, Religious, Playground, and Educational.</p>
+        <div class="map-container">
+            <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=80.19%2C6.27%2C80.25%2C6.32&amp;layer=mapnik&amp;marker=6.343%2C80.222"></iframe>
+        </div>
+        <p><small><a href="https://www.openstreetmap.org/?mlat=6.343&mlon=80.222#map=..." target="_blank">View Larger Map & Extract Data</a></small></p>
+    </section>
+    
+    <section id="demographics">
+        <h2>Demographics & Education</h2>
+        <div class="flex-row">
+            <div class="flex-col">
+                <h3>Population</h3>
+                <table>
+                    <tr><th>Gender</th><th>Percentage</th></tr>
+                    <tr><td>Female</td><td>53%</td></tr>
+                    <tr><td>Male</td><td>47%</td></tr>
+                </table>
+            </div>
+            <div class="flex-col">
+                <h3>Education</h3>
+                <table>
+                    <tr><th>Grade Level</th><th>Percentage</th></tr>
+                    <tr><td>Grades 1-5</td><td>41%</td></tr>
+                    <tr><td>Grades 6-11</td><td>50%</td></tr>
+                    <tr><td>Grades 12-13</td><td>9%</td></tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="agriculture">
+        <h2>Agriculture</h2>
+        <p>Agriculture is the economic backbone of Pitigala, heavily shaped by the wet zone climate of the Southern Province.</p>
+        <div class="flex-row">
+            <div class="flex-col card">
+                <img src="pic/tea.jpg"width="400"  height="230">
+                <h3>Tea Cultivation</h3>
+                <p>Lush green tea smallholdings and sprawling estates cover the rolling hills, providing a major source of employment and high-quality green leaves for regional factories.</p>
+            </div>
+            <div class="flex-col card">
+                <img src="pic/rubber.jpg"width="400"  height="230">
+                <h3>Rubber Cultivation</h3>
+                <p>Rubber plantations are deeply rooted in Pitigala's history. Tapping rubber latex is a traditional daily routine for many local families, contributing significantly to the local economy.</p>
+            </div>
+            <div class="flex-col card">
+                <h3>Coconut Cultivation</h3>
+                <p>Interspersed with residential properties and mixed crop lands, coconut palms thrive well, supplying domestic and commercial requirements for households.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="culture">
+        <h2>Culture & Community Activities</h2>
+        <div class="flex-row">
+            <div class="flex-col card">
+                <h3>Cultural Events</h3>
+                <ul>
+                    <li>Katina Ceremony</li>
+                    <li>Dewol Madu</li>
+                    <li>Perahara</li>
+                    <li>New Year Celebrations</li>
+                    <li>Carnival</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="tourism">
+        <h2>Tourism & Attractions</h2>
+        <p>Discover the scenic natural water bodies and landmarks that make Pitigala a peaceful getaway.</p>
+        <div class="flex-row">
+            <div class="flex-col card">
+                <img src="pic/kalu dola.jpeg"width="400"  height="230">
+                <h3>Kalu Dola</h3>
+                <p>A tranquil and scenic stream known for its dark, clear waters flowing through lush greenery, offering a soothing natural retreat for nature lovers.</p>
+            </div>
+            <div class="flex-col card">
+                <img src= "pic/gal dola.jpg" width="400"  height="230">
+                <h3>Gal Dola</h3>
+                <p>A picturesque rocky stream environment characterized by unique boulder formations and cool flowing water streams, perfect for quiet outdoor exploration.</p>
+            </div>
+            <div class="flex-col card">
+                <img src= "pic/kaludiya Pokuna.jpg" width="400"  height="230">
+                <h3>Kaludiya Pokuna</h3>
+                <p>A historic and mystical dark water pond surrounded by dense foliage, rich in local folklore and environmental beauty.</p>
+            </div>
+            <div class="flex-col card">
+                <img src= "pic/tea factory.jpg" width="400"  height="230">
+                <h3>Athukorala Tea Factory & Tea Centre</h3>
+                <p>The tea factory is a major attraction because of its beautiful surroundings and quality products. Visitors enjoy experiencing tea plucking and learning how leaves are processed into final products.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="community">
+        <h2>Community Forum & Feedback</h2>
+        <p>Connect with our community! Ask questions or leave your feedback below.</p>
+        
+        <form id="commentForm">
+            <input type="text" id="userName" placeholder="Your Name" class="comment-box" required>
+            <textarea id="userComment" class="comment-box" rows="4" placeholder="Write your comment or question here..." required></textarea>
+            <button type="submit">Post Comment</button>
+        </form>
+
+        <div class="comment-list" id="commentList">
+            <h3>Recent Comments</h3>
+            <div class="comment-item">
+                <strong>Anura Silva:</strong> Pitigala has changed so much over the years
+            </div>
+            <div class="comment-item">
+                <strong>Chamari Perera:</strong> Kalu Dola is my favorite weekend escape. Glad to see it featured here.
+            </div>
+        </div>
+    </section>
+</div>
+
+<script>
+    // Simple script to handle dynamic comment submission client-side
+    document.getElementById('commentForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const name = document.getElementById('userName').value;
+        const commentText = document.getElementById('userComment').value;
+        
+        const commentList = document.getElementById('commentList');
+        const newDiv = document.createElement('div');
+        newDiv.className = 'comment-item';
+        newDiv.innerHTML = `<strong>${escapeHtml(name)}:</strong> ${escapeHtml(commentText)}`;
+        
+        commentList.appendChild(newDiv);
+        
+        // Reset form
+        this.reset();
+        alert('Thank you for your comment! Your feedback has been posted.');
+    });
+
+    function unsafeHTML(str) {
+        return str;
+    }
+    
+    function escapeHtml(text) {
+        return text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+    }
+</script>
+
+</body>
+</html>
